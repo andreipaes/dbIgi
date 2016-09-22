@@ -1,0 +1,2 @@
+json.extract! fund, :id, :name, :shortName, :isinCode, :cnpj, :exclusive, :nqPeerGroupName, :niPeerGroupName, :cvmClass, :anbimaClass, :adminFee, :performanceFeeDescription, :isIgi, :isIgiExotic, :hasRestriction, :targetClientList, :minimumInvestmentAmount, :vehicleType, :redemptionPaymentPeriod, :redemptionConversionPeriod, :totalShareHolders, :created_at, :updated_at
+json.url fund_url(fund, format: :json)

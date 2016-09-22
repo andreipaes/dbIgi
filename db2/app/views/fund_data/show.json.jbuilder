@@ -1,0 +1,1 @@
+json.partial! "fund_data/fund_datum", fund_datum: @fund_datum

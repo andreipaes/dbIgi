@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  shortName: MyString
+  isinCode: MyString
+  cnpj: MyString
+  exclusive: false
+  nqPeerGroupName: MyString
+  niPeerGroupName: MyString
+  cvmClass: MyString
+  anbimaClass: MyString
+  adminFee: 1.5
+  performanceFeeDescription: MyText
+  isIgi: false
+  isIgiExotic: false
+  hasRestriction: false
+  targetClientList: MyString
+  minimumInvestmentAmount: 
+  vehicleType: MyString
+  redemptionPaymentPeriod: MyString
+  redemptionConversionPeriod: MyString
+  totalShareHolders: 1
+
+two:
+  name: MyString
+  shortName: MyString
+  isinCode: MyString
+  cnpj: MyString
+  exclusive: false
+  nqPeerGroupName: MyString
+  niPeerGroupName: MyString
+  cvmClass: MyString
+  anbimaClass: MyString
+  adminFee: 1.5
+  performanceFeeDescription: MyText
+  isIgi: false
+  isIgiExotic: false
+  hasRestriction: false
+  targetClientList: MyString
+  minimumInvestmentAmount: 
+  vehicleType: MyString
+  redemptionPaymentPeriod: MyString
+  redemptionConversionPeriod: MyString
+  totalShareHolders: 1

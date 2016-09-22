@@ -1,0 +1,129 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Fund Data</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Period</th>
+      <th>Networth</th>
+      <th>Returnbasisrule</th>
+      <th>Yield</th>
+      <th>Onedayyield</th>
+      <th>Oneweekyield</th>
+      <th>Yieldbenchmarkyieldratio</th>
+      <th>Mean</th>
+      <th>Volatility</th>
+      <th>Benchmarkstringid</th>
+      <th>Benchmarkyield</th>
+      <th>Benchmarkvolatility</th>
+      <th>Excessreturn</th>
+      <th>Trackingerror</th>
+      <th>Downsiderisk</th>
+      <th>Sharpe</th>
+      <th>Sortino</th>
+      <th>Alpha</th>
+      <th>Minimumvariancetrackingerror</th>
+      <th>Informationratio</th>
+      <th>Certaintyequivalentaggressive</th>
+      <th>Certaintyequivalentmoderate</th>
+      <th>Certaintyequivalentconservative</th>
+      <th>Doublenetinvestratingaggressive</th>
+      <th>Netinvestratingmoderate</th>
+      <th>Netinvestratingconservative</th>
+      <th>Netinvestratingglobalaggressive</th>
+      <th>Netinvestratingglobalmoderate</th>
+      <th>Netinvestratingglobalconservative</th>
+      <th>Accumulatednetcapitalgain</th>
+      <th>Betabenchmarkstringid 1</th>
+      <th>Betavalue 1</th>
+      <th>Betabenchmarkstringid 2</th>
+      <th>Betavalue 2</th>
+      <th>Betabenchmarkstringid 3</th>
+      <th>Betavalue 3</th>
+      <th>Betabenchmarkstringid 4</th>
+      <th>Betavalue 4</th>
+      <th>Betabenchmarkstringid 5</th>
+      <th>Betavalue 5</th>
+      <th>Betabenchmarkstringid 6</th>
+      <th>Betavalue 6</th>
+      <th>Betabenchmarkstringid 7</th>
+      <th>Betavalue 7</th>
+      <th>Betabenchmarkstringid 8</th>
+      <th>Betavalue 8</th>
+      <th>Betabenchmarkstringid 9</th>
+      <th>Betavalue 9</th>
+      <th>Betabenchmarkstringid 10</th>
+      <th>Betavalue 10</th>
+      <th>Fund </th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fund_data.each do |fund_datum| %>
+      <tr>
+        <td><%= fund_datum.date_id %></td>
+        <td><%= fund_datum.period_id %></td>
+        <td><%= fund_datum.networth %></td>
+        <td><%= fund_datum.returnBasisRule %></td>
+        <td><%= fund_datum.yield %></td>
+        <td><%= fund_datum.oneDayYield %></td>
+        <td><%= fund_datum.oneWeekYield %></td>
+        <td><%= fund_datum.yieldBenchmarkYieldRatio %></td>
+        <td><%= fund_datum.mean %></td>
+        <td><%= fund_datum.volatility %></td>
+        <td><%= fund_datum.benchmarkStringId %></td>
+        <td><%= fund_datum.benchmarkYield %></td>
+        <td><%= fund_datum.benchmarkVolatility %></td>
+        <td><%= fund_datum.excessReturn %></td>
+        <td><%= fund_datum.trackingError %></td>
+        <td><%= fund_datum.downsideRisk %></td>
+        <td><%= fund_datum.sharpe %></td>
+        <td><%= fund_datum.sortino %></td>
+        <td><%= fund_datum.alpha %></td>
+        <td><%= fund_datum.minimumVarianceTrackingError %></td>
+        <td><%= fund_datum.informationRatio %></td>
+        <td><%= fund_datum.certaintyEquivalentAggressive %></td>
+        <td><%= fund_datum.certaintyEquivalentModerate %></td>
+        <td><%= fund_datum.certaintyEquivalentConservative %></td>
+        <td><%= fund_datum.doublenetInvestRatingAggressive %></td>
+        <td><%= fund_datum.netInvestRatingModerate %></td>
+        <td><%= fund_datum.netInvestRatingConservative %></td>
+        <td><%= fund_datum.netInvestRatingGlobalAggressive %></td>
+        <td><%= fund_datum.netInvestRatingGlobalModerate %></td>
+        <td><%= fund_datum.netInvestRatingGlobalConservative %></td>
+        <td><%= fund_datum.accumulatedNetCapitalGain %></td>
+        <td><%= fund_datum.BetaBenchmarkStringID_1 %></td>
+        <td><%= fund_datum.BetaValue_1 %></td>
+        <td><%= fund_datum.BetaBenchmarkStringID_2 %></td>
+        <td><%= fund_datum.BetaValue_2 %></td>
+        <td><%= fund_datum.BetaBenchmarkStringID_3 %></td>
+        <td><%= fund_datum.BetaValue_3 %></td>
+        <td><%= fund_datum.BetaBenchmarkStringID_4 %></td>
+        <td><%= fund_datum.BetaValue_4 %></td>
+        <td><%= fund_datum.BetaBenchmarkStringID_5 %></td>
+        <td><%= fund_datum.BetaValue_5 %></td>
+        <td><%= fund_datum.BetaBenchmarkStringID_6 %></td>
+        <td><%= fund_datum.BetaValue_6 %></td>
+        <td><%= fund_datum.BetaBenchmarkStringID_7 %></td>
+        <td><%= fund_datum.BetaValue_7 %></td>
+        <td><%= fund_datum.BetaBenchmarkStringID_8 %></td>
+        <td><%= fund_datum.BetaValue_8 %></td>
+        <td><%= fund_datum.BetaBenchmarkStringID_9 %></td>
+        <td><%= fund_datum.BetaValue_9 %></td>
+        <td><%= fund_datum.BetaBenchmarkStringID_10 %></td>
+        <td><%= fund_datum.BetaValue_10 %></td>
+        <td><%= fund_datum.fund.name %></td>
+        <td><%= link_to 'Show', fund_datum %></td>
+        <td><%= link_to 'Edit', edit_fund_datum_path(fund_datum) %></td>
+        <td><%= link_to 'Destroy', fund_datum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fund datum', new_fund_datum_path %>

@@ -1,0 +1,108 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @fund.name %>
+</p>
+
+<p>
+  <strong>Shortname:</strong>
+  <%= @fund.shortName %>
+</p>
+
+<p>
+  <strong>Isincode:</strong>
+  <%= @fund.isinCode %>
+</p>
+
+<p>
+  <strong>Cnpj:</strong>
+  <%= @fund.cnpj %>
+</p>
+
+<p>
+  <strong>Exclusive:</strong>
+  <%= @fund.exclusive %>
+</p>
+
+<p>
+  <strong>Nqpeergroupname:</strong>
+  <%= @fund.nqPeerGroupName %>
+</p>
+
+<p>
+  <strong>Nipeergroupname:</strong>
+  <%= @fund.niPeerGroupName %>
+</p>
+
+<p>
+  <strong>Cvmclass:</strong>
+  <%= @fund.cvmClass %>
+</p>
+
+<p>
+  <strong>Anbimaclass:</strong>
+  <%= @fund.anbimaClass %>
+</p>
+
+<p>
+  <strong>Adminfee:</strong>
+  <%= @fund.adminFee %>
+</p>
+
+<p>
+  <strong>Performancefeedescription:</strong>
+  <%= @fund.performanceFeeDescription %>
+</p>
+
+<p>
+  <strong>Isigi:</strong>
+  <%= @fund.isIgi %>
+</p>
+
+<p>
+  <strong>Isigiexotic:</strong>
+  <%= @fund.isIgiExotic %>
+</p>
+
+<p>
+  <strong>Hasrestriction:</strong>
+  <%= @fund.hasRestriction %>
+</p>
+
+<p>
+  <strong>Targetclientlist:</strong>
+  <%= @fund.targetClientList %>
+</p>
+
+<p>
+  <strong>Minimuminvestmentamount:</strong>
+  <%= @fund.minimumInvestmentAmount %>
+</p>
+
+<p>
+  <strong>Vehicletype:</strong>
+  <%= @fund.vehicleType %>
+</p>
+
+<p>
+  <strong>Redemptionpaymentperiod:</strong>
+  <%= @fund.redemptionPaymentPeriod %>
+</p>
+
+<p>
+  <strong>Redemptionconversionperiod:</strong>
+  <%= @fund.redemptionConversionPeriod %>
+</p>
+
+<p>
+  <strong>Totalshareholders:</strong>
+  <%= @fund.totalShareHolders %>
+</p>
+<p>
+  <strong>Manager:</strong>
+  <%= @fund.manager.name %>
+</p>
+
+<%= link_to 'Edit', edit_fund_path(@fund) %> |
+<%= link_to 'Back', funds_path %>

@@ -1,0 +1,227 @@
+<%= form_for(@fund_datum) do |f| %>
+  <% if @fund_datum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fund_datum.errors.count, "error") %> prohibited this fund_datum from being saved:</h2>
+
+      <ul>
+      <% @fund_datum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date_id %><br>
+    <%= f.date_select :date_id %>
+  </div>
+  <div class="field">
+    <%= f.label :period_id %><br>
+    <%= f.number_field :period_id %>
+  </div>
+  <div class="field">
+    <%= f.label :networth %><br>
+    <%= f.text_field :networth %>
+  </div>
+  <div class="field">
+    <%= f.label :returnBasisRule %><br>
+    <%= f.text_field :returnBasisRule %>
+  </div>
+  <div class="field">
+    <%= f.label :yield %><br>
+    <%= f.text_field :yield %>
+  </div>
+  <div class="field">
+    <%= f.label :oneDayYield %><br>
+    <%= f.text_field :oneDayYield %>
+  </div>
+  <div class="field">
+    <%= f.label :oneWeekYield %><br>
+    <%= f.text_field :oneWeekYield %>
+  </div>
+  <div class="field">
+    <%= f.label :yieldBenchmarkYieldRatio %><br>
+    <%= f.text_field :yieldBenchmarkYieldRatio %>
+  </div>
+  <div class="field">
+    <%= f.label :mean %><br>
+    <%= f.text_field :mean %>
+  </div>
+  <div class="field">
+    <%= f.label :volatility %><br>
+    <%= f.text_field :volatility %>
+  </div>
+  <div class="field">
+    <%= f.label :benchmarkStringId %><br>
+    <%= f.text_field :benchmarkStringId %>
+  </div>
+  <div class="field">
+    <%= f.label :benchmarkYield %><br>
+    <%= f.text_field :benchmarkYield %>
+  </div>
+  <div class="field">
+    <%= f.label :benchmarkVolatility %><br>
+    <%= f.text_field :benchmarkVolatility %>
+  </div>
+  <div class="field">
+    <%= f.label :excessReturn %><br>
+    <%= f.text_field :excessReturn %>
+  </div>
+  <div class="field">
+    <%= f.label :trackingError %><br>
+    <%= f.text_field :trackingError %>
+  </div>
+  <div class="field">
+    <%= f.label :downsideRisk %><br>
+    <%= f.text_field :downsideRisk %>
+  </div>
+  <div class="field">
+    <%= f.label :sharpe %><br>
+    <%= f.text_field :sharpe %>
+  </div>
+  <div class="field">
+    <%= f.label :sortino %><br>
+    <%= f.text_field :sortino %>
+  </div>
+  <div class="field">
+    <%= f.label :alpha %><br>
+    <%= f.text_field :alpha %>
+  </div>
+  <div class="field">
+    <%= f.label :minimumVarianceTrackingError %><br>
+    <%= f.text_field :minimumVarianceTrackingError %>
+  </div>
+  <div class="field">
+    <%= f.label :informationRatio %><br>
+    <%= f.text_field :informationRatio %>
+  </div>
+  <div class="field">
+    <%= f.label :certaintyEquivalentAggressive %><br>
+    <%= f.text_field :certaintyEquivalentAggressive %>
+  </div>
+  <div class="field">
+    <%= f.label :certaintyEquivalentModerate %><br>
+    <%= f.text_field :certaintyEquivalentModerate %>
+  </div>
+  <div class="field">
+    <%= f.label :certaintyEquivalentConservative %><br>
+    <%= f.text_field :certaintyEquivalentConservative %>
+  </div>
+  <div class="field">
+    <%= f.label :doublenetInvestRatingAggressive %><br>
+    <%= f.text_field :doublenetInvestRatingAggressive %>
+  </div>
+  <div class="field">
+    <%= f.label :netInvestRatingModerate %><br>
+    <%= f.text_field :netInvestRatingModerate %>
+  </div>
+  <div class="field">
+    <%= f.label :netInvestRatingConservative %><br>
+    <%= f.text_field :netInvestRatingConservative %>
+  </div>
+  <div class="field">
+    <%= f.label :netInvestRatingGlobalAggressive %><br>
+    <%= f.text_field :netInvestRatingGlobalAggressive %>
+  </div>
+  <div class="field">
+    <%= f.label :netInvestRatingGlobalModerate %><br>
+    <%= f.text_field :netInvestRatingGlobalModerate %>
+  </div>
+  <div class="field">
+    <%= f.label :netInvestRatingGlobalConservative %><br>
+    <%= f.text_field :netInvestRatingGlobalConservative %>
+  </div>
+  <div class="field">
+    <%= f.label :accumulatedNetCapitalGain %><br>
+    <%= f.text_field :accumulatedNetCapitalGain %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaBenchmarkStringID_1 %><br>
+    <%= f.text_field :BetaBenchmarkStringID_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaValue_1 %><br>
+    <%= f.text_field :BetaValue_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaBenchmarkStringID_2 %><br>
+    <%= f.text_field :BetaBenchmarkStringID_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaValue_2 %><br>
+    <%= f.text_field :BetaValue_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaBenchmarkStringID_3 %><br>
+    <%= f.text_field :BetaBenchmarkStringID_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaValue_3 %><br>
+    <%= f.text_field :BetaValue_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaBenchmarkStringID_4 %><br>
+    <%= f.text_field :BetaBenchmarkStringID_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaValue_4 %><br>
+    <%= f.text_field :BetaValue_4 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaBenchmarkStringID_5 %><br>
+    <%= f.text_field :BetaBenchmarkStringID_5 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaValue_5 %><br>
+    <%= f.text_field :BetaValue_5 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaBenchmarkStringID_6 %><br>
+    <%= f.text_field :BetaBenchmarkStringID_6 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaValue_6 %><br>
+    <%= f.text_field :BetaValue_6 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaBenchmarkStringID_7 %><br>
+    <%= f.text_field :BetaBenchmarkStringID_7 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaValue_7 %><br>
+    <%= f.text_field :BetaValue_7 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaBenchmarkStringID_8 %><br>
+    <%= f.text_field :BetaBenchmarkStringID_8 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaValue_8 %><br>
+    <%= f.text_field :BetaValue_8 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaBenchmarkStringID_9 %><br>
+    <%= f.text_field :BetaBenchmarkStringID_9 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaValue_9 %><br>
+    <%= f.text_field :BetaValue_9 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaBenchmarkStringID_10 %><br>
+    <%= f.text_field :BetaBenchmarkStringID_10 %>
+  </div>
+  <div class="field">
+    <%= f.label :BetaValue_10 %><br>
+    <%= f.text_field :BetaValue_10 %>
+  </div>
+
+  <div class="field">
+  <%= f.label :fund_id %><br>
+    <%= f.collection_select(:fund_id, Fund.all, :id, :name, prompt: true)%>
+
+</div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

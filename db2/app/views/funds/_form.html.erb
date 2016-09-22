@@ -1,0 +1,105 @@
+<%= form_for(@fund) do |f| %>
+  <% if @fund.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fund.errors.count, "error") %> prohibited this fund from being saved:</h2>
+
+      <ul>
+      <% @fund.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :shortName %><br>
+    <%= f.text_field :shortName %>
+  </div>
+  <div class="field">
+    <%= f.label :isinCode %><br>
+    <%= f.text_field :isinCode %>
+  </div>
+  <div class="field">
+    <%= f.label :cnpj %><br>
+    <%= f.text_field :cnpj %>
+  </div>
+  <div class="field">
+    <%= f.label :exclusive %><br>
+    <%= f.check_box :exclusive %>
+  </div>
+  <div class="field">
+    <%= f.label :nqPeerGroupName %><br>
+    <%= f.text_field :nqPeerGroupName %>
+  </div>
+  <div class="field">
+    <%= f.label :niPeerGroupName %><br>
+    <%= f.text_field :niPeerGroupName %>
+  </div>
+  <div class="field">
+    <%= f.label :cvmClass %><br>
+    <%= f.text_field :cvmClass %>
+  </div>
+  <div class="field">
+    <%= f.label :anbimaClass %><br>
+    <%= f.text_field :anbimaClass %>
+  </div>
+  <div class="field">
+    <%= f.label :adminFee %><br>
+    <%= f.text_field :adminFee %>
+  </div>
+  <div class="field">
+    <%= f.label :performanceFeeDescription %><br>
+    <%= f.text_area :performanceFeeDescription %>
+  </div>
+  <div class="field">
+    <%= f.label :isIgi %><br>
+    <%= f.check_box :isIgi %>
+  </div>
+  <div class="field">
+    <%= f.label :isIgiExotic %><br>
+    <%= f.check_box :isIgiExotic %>
+  </div>
+  <div class="field">
+    <%= f.label :hasRestriction %><br>
+    <%= f.check_box :hasRestriction %>
+  </div>
+  <div class="field">
+    <%= f.label :targetClientList %><br>
+    <%= f.text_field :targetClientList %>
+  </div>
+  <div class="field">
+    <%= f.label :minimumInvestmentAmount %><br>
+    <%= f.text_field :minimumInvestmentAmount %>
+  </div>
+  <div class="field">
+    <%= f.label :vehicleType %><br>
+    <%= f.text_field :vehicleType %>
+  </div>
+  <div class="field">
+    <%= f.label :redemptionPaymentPeriod %><br>
+    <%= f.text_field :redemptionPaymentPeriod %>
+  </div>
+  <div class="field">
+    <%= f.label :redemptionConversionPeriod %><br>
+    <%= f.text_field :redemptionConversionPeriod %>
+  </div>
+  <div class="field">
+    <%= f.label :totalShareHolders %><br>
+    <%= f.number_field :totalShareHolders %>
+  </div>
+  
+
+  <dib class="field">
+  <%= f.label :manager_id %><br>
+    <%= f.collection_select(:manager_id, Manager.all, :id, :name, prompt: true)%>
+
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
